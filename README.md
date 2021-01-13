@@ -1,6 +1,9 @@
 # nginx-sharing-session
 This is nginx-sharing-session
+
+
 *[How to Install NGINX](#how-to-install-nginx)
+*[How to Create Configuration](#hot-to-create-configuration)
 ## How to Install NGINX
 Code:
 
@@ -9,7 +12,7 @@ Code:
     cd /etc/nginx
     curl -X GET localhost
 
-## how to create configuration
+## How to Create Configuration
 Code:
 
     cd /etc/nginx/sites-available
