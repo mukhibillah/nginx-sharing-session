@@ -10,3 +10,19 @@ Code:
     curl -X GET localhost
 
 ## how to create configuration
+Code:
+
+    cd /etc/nginx/sites-available
+
+    sudo vi reverse.conf
+    > server {
+    >  localtion / {
+    >    proxy_pass http://localhost:8080;
+    >  }
+    > }
+    
+    sudo ln -s /etc/nginx/sites-available/reverse.conf /etc/nginx/sites-enabled/reverse.conf
+
+    sudo nginx -t
+
+    sudo systemctl reload nginx.service
