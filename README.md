@@ -3,7 +3,7 @@ This is nginx-sharing-session
 
 
 * [How to Install NGINX](#how-to-install-nginx)
-* [How to Create Configuration](#hot-to-create-configuration)
+* [How to Create Configuration](#how-to-create-configuration)
 ## How to Install NGINX
 Code:
 
