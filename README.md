@@ -2,11 +2,11 @@
 This is nginx-sharing-session
 
 ## how to install nginx
-> sudo apt update
+Code:
 
-> sudo apt install nginx
-
-> cd /etc/nginx
-
+    sudo apt update
+    sudo apt install nginx
+    cd /etc/nginx
+    curl -X GET localhost
 
 ## how to create configuration
