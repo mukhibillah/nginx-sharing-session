@@ -1,7 +1,7 @@
 # nginx-sharing-session
 This is nginx-sharing-session
-
-## how to install nginx
+*[How to Install NGINX](#how-to-install-nginx)
+## How to Install NGINX
 Code:
 
     sudo apt update
