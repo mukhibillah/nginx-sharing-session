@@ -10,6 +10,7 @@ There's any 4 server to handle the request
     
 
 /get for get a full link
+
     /get?code="GGLX"
 
 ## How To Run?
