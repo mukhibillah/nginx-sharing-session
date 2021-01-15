@@ -25,7 +25,7 @@ func create(w http.ResponseWriter, r *http.Request) {
 	var err error
 
 	switch longURL {
-	case "wwww.facebook.com":
+	case "www.facebook.com":
 		shortURL = "FB12"
 	case "www.instagram.com":
 		shortURL = "IG12"
@@ -41,6 +41,7 @@ func create(w http.ResponseWriter, r *http.Request) {
 	}
 
 	w.Write([]byte(shortURL))
+	w.Write([]byte("\nserver 3"))
 	return
 }
 
