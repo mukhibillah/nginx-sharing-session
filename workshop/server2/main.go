@@ -6,13 +6,18 @@ import (
 	"net/http"
 )
 
+var (
+	counterGet    int = 1
+	counterCreate int = 1
+)
+
 func main() {
 	// api
 	http.HandleFunc("/create", create)
 	http.HandleFunc("/get", get)
 
 	// start server
-	fmt.Println("Server Two Run")
+	fmt.Println("Server two Run")
 	http.ListenAndServe(":9992", nil)
 	return
 }
@@ -23,6 +28,9 @@ func create(w http.ResponseWriter, r *http.Request) {
 
 	var shortURL string
 	var err error
+
+	fmt.Println("Counter: ", counterCreate)
+	counterCreate++
 
 	switch longURL {
 	case "wwww.facebook.com":
@@ -50,6 +58,9 @@ func get(w http.ResponseWriter, r *http.Request) {
 
 	var realLink string
 	var err error
+
+	fmt.Println("Counter: ", counterGet)
+	counterGet++
 
 	switch shortURL {
 	case "FB12":
